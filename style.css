@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color .5s ease;
+    font-size: 20px;
+}
+
+.btn-default:hover {
+    text-decoration: none;
+    background: #00bfa5;
+}
+
+header {
+    background-color: #00bfa5;
+    width: 100%;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar #logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+#navbar #navlist {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#navbar #navlist a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#navbar #navlist a:hover {
+    color: #00bfa5;
+}
+
+section {
+    padding: 28px 8%;
+}
+
+#inicio {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 0;
+    gap: 20px; 
+}
+
+#cta {
+    max-width: 550px; 
+}
+
+#inicio .inicio-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+#inicio .inicio-title span {
+    color: #00bfa5;
+}
+
+#inicio .inicio-discription {
+    font-size: 1.2em;
+    margin-bottom: 32px;
+}
+
+#inicio .inicio-banner {
+    display: flex; 
+    align-items: start; 
+}
+
+#inicio .inicio-banner img {
+    height: auto; 
+    width: 500px; 
+}
+
+#cta-buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta-buttons a {
+    text-decoration: none;
+    color: #333;
+}
+
+#planejamento .plan-title {
+    color: #00bfa5;
+    margin-bottom: 24px;
+    margin-top: 64px;
+}
+
+#planejamento .plan-description {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+#metodos {
+    text-align: center;
+    margin: 64px 0px;
+}
+
+#cardsmetodos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 62px;
+    margin-top: 32px;
+}
+
+#cardsmetodos .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 20%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.5s ease; 
+}
+
+#cardsmetodos .card:hover {
+    background-color: #00bfa5;
+}
+
+.card-description {
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.metodos-title {
+    color: #00bfa5;
+    font-size: 2.1875rem;
+    margin-bottom: 76px;
+}
+
+#cardsmetodos img {
+    width: 100px;
+    border-radius: 20%;
+}
+
+#fertilidade {
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+}
+
+#fertilidade img {
+    display: flex; 
+    align-items: start; 
+    width: 250px;
+    margin-left: 32px;
+    margin-top: 82px;
+}
+
+#fertilidade .title-ferti {
+    color: #00bfa5;
+    margin-bottom: 24px;
+}
+
+#fertilidade .text {
+    text-align: right;
+    text-align: justify;
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    #cardsmetodos .card {
+        width: 30%; 
+    }
+}
+
+@media (max-width: 1200px) {
+    #navbar #navlist a {
+        gap: 20px; 
+        z-index: 1;
+    }
+
+    header{
+        z-index: 2;
+    }
+    
+    #cardsmetodos .card {
+        width: 45%; 
+    }
+
+    #inicio {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #inicio .inicio-banner img {
+        width: 100%; 
+    }
+
+    #cta {
+        text-align: center; 
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 28px 8%; 
+    }
+    
+    #navbar #logo {
+        font-size: 20px; 
+    }
+
+    #navbar #navlist {
+        display: none; 
+    }
+
+    #navbar {
+        justify-content: center; 
+    }
+
+    #inicio .inicio-title {
+        font-size: 2em; 
+    }
+
+    #inicio .inicio-discription {
+        font-size: 1em; 
+    }
+
+    #fertilidade {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #fertilidade img {
+        width: 100%; 
+        max-width: 250px; 
+    }
+
+    #fertilidade .text {
+        width: 100%; 
+        text-align: center; 
+    }
+}
+
+.title-import {
+    color: #00bfa5;
+    margin-bottom: 24px;
+}
+
+.description-text {
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+.description-text02 {
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+footer {
+    margin-top: 124px;
+    background-color: #00bfa5;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.3);
+}
+
+footer h3 {
+    text-align: center;
+    text-align: justify;
+    color: white;
+    padding: 28px 8%;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.copy {
+    margin-top: 32px;
+}
+
+.dev {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
